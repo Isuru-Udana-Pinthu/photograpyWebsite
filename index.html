@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tilia - Elegant Photography Portfolio</title>
+  <meta name="description" content="Tilia is a Wedding & Portrait Studio based in New York." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header id="site-header" class="site-header">
+    <div class="top-header">
+      <div class="container-fluid px-4">
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="top-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+          <div class="header-logo">
+            <a href="index.html">
+              <img src="https://matchthemes.com/demohtml/tilia/images/logo-tilia.png" alt="Tilia" class="logo-light"
+                width="110" />
+              <img src="https://matchthemes.com/demohtml/tilia/images/logo-dark-tilia.png" alt="Tilia" class="logo-dark"
+                width="110" />
+            </a>
+          </div>
+          <div class="top-cta">
+            <a href="#contact" class="btn btn-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="main-nav" id="mainNav">
+      <div class="container">
+        <ul class="nav-list d-flex justify-content-center align-items-center list-unstyled mb-0">
+          <li class="nav-item active"><a href="index.html">Home</a></li>
+          <li class="nav-item has-dropdown">
+            <a href="#">Pages <i class="fas fa-chevron-down fa-xs"></i></a>
+            <ul class="dropdown-menu-custom">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Pricing Plans</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Testimonials</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="#">Portfolios <i class="fas fa-chevron-down fa-xs"></i></a>
+            <ul class="dropdown-menu-custom">
+              <li><a href="#">Portfolio Grid</a></li>
+              <li><a href="#">Portfolio Masonry</a></li>
+              <li><a href="#">Portfolio Slider</a></li>
+            </ul>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="#">Galleries <i class="fas fa-chevron-down fa-xs"></i></a>
+            <ul class="dropdown-menu-custom">
+              <li><a href="#">Gallery Grid</a></li>
+              <li><a href="#">Gallery Masonry</a></li>
+              <li><a href="#">Gallery Justify</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#">Blog</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <button class="mobile-nav-toggle d-lg-none" id="mobileNavToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- HERO SLIDER -->
+  <section id="home-section-1-1" class="hero-section">
+    <div class="swiper hero-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slider-img"
+          style="background-image:url('https://matchthemes.com/demohtml/tilia/images/home/slider-1.jpg')">
+          <div class="slide-overlay"></div>
+          <div class="slide-content text-center">
+            <p class="slide-subtitle">Photography & Videography</p>
+            <h1 class="slide-title">Family Portraits</h1>
+            <p class="slide-desc">Capturing timeless moments with artistry and heart</p>
+            <a href="#" class="btn btn-hero">Find More</a>
+          </div>
+        </div>
+        <div class="swiper-slide slider-img"
+          style="background-image:url('https://matchthemes.com/demohtml/tilia/images/home/slider-2.jpg')">
+          <div class="slide-overlay"></div>
+          <div class="slide-content text-center">
+            <p class="slide-subtitle">Wedding Photography</p>
+            <h1 class="slide-title">Wedding Photography</h1>
+            <p class="slide-desc">Your love story, beautifully told through our lens</p>
+            <a href="#" class="btn btn-hero">Find More</a>
+          </div>
+        </div>
+        <div class="swiper-slide slider-img"
+          style="background-image:url('https://matchthemes.com/demohtml/tilia/images/home/slider-3.jpg')">
+          <div class="slide-overlay"></div>
+          <div class="slide-content text-center">
+            <p class="slide-subtitle">Fine Art Photography</p>
+            <h1 class="slide-title">Fine Art Sessions</h1>
+            <p class="slide-desc">Where every photograph becomes a masterpiece</p>
+            <a href="#" class="btn btn-hero">Find More</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- OUR STORY -->
+  <section id="home-section-1-2" class="story-section py-5">
+    <div class="container py-5">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5">
+          <p class="section-label">Our Story</p>
+          <div class="section-label-wave"></div>
+          <h2 class="story-heading">Tilia is a Wedding &amp; Portrait Studio based in New York</h2>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <img src="https://matchthemes.com/demohtml/tilia/images/home/awards-1.png" alt="Award 2021" width="110"
+              onerror="this.style.display='none'" />
+            <img src="https://matchthemes.com/demohtml/tilia/images/home/awards-2.png" alt="Award 2022" width="110"
+              onerror="this.style.display='none'" />
+            <img src="https://matchthemes.com/demohtml/tilia/images/home/awards-3.png" alt="Award 2023" width="110"
+              onerror="this.style.display='none'" />
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <p class="story-text">We are a team of passionate photographers and videographers dedicated to capturing the
+            most beautiful moments in your life. With over a decade of experience, we blend artistry and technical
+            excellence to create images that will be treasured for generations.</p>
+          <p class="story-text mt-3">From intimate portrait sessions to grand wedding celebrations, we approach every
+            project with the same level of care, creativity, and commitment to perfection.</p>
+          <div class="row mt-4">
+            <div class="col-6">
+              <ul class="virtues-list list-unstyled">
+                <li><i class="fas fa-check"></i> We love what we do</li>
+                <li><i class="fas fa-check"></i> We are transparent</li>
+                <li><i class="fas fa-check"></i> We deliver on time</li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="virtues-list list-unstyled">
+                <li><i class="fas fa-check"></i> Award-winning studio</li>
+                <li><i class="fas fa-check"></i> 10+ years experience</li>
+                <li><i class="fas fa-check"></i> 500+ happy clients</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="home-section-1-3" class="services-section parallax"
+    style="background-image:url('https://matchthemes.com/demohtml/tilia/images/home/slider-2.jpg')">
+    <div class="services-overlay"></div>
+    <div class="container py-6">
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-3 col-md-6">
+          <div class="service-card text-center">
+            <div class="service-icon-box"><i class="fas fa-ring"></i></div>
+            <h4 class="service-title">Weddings</h4>
+            <p class="service-desc">Timeless wedding stories captured with elegance and emotion for every couple.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="service-card text-center">
+            <div class="service-icon-box"><i class="fas fa-user"></i></div>
+            <h4 class="service-title">Portraits</h4>
+            <p class="service-desc">Professional portrait sessions that reveal your authentic personality and beauty.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="service-card text-center">
+            <div class="service-icon-box"><i class="fas fa-camera"></i></div>
+            <h4 class="service-title">Fashion</h4>
+            <p class="service-desc">High-end fashion photography for brands, designers, and creative visionaries.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="service-card text-center">
+            <div class="service-icon-box"><i class="fas fa-image"></i></div>
+            <h4 class="service-title">Editorial</h4>
+            <p class="service-desc">Compelling editorial imagery that tells powerful stories for publications.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="home-section-1-4" class="portfolio-section py-5">
+    <div class="container py-5">
+      <div class="d-flex justify-content-between align-items-center mb-5">
+        <h2 class="section-title">Selected Work</h2>
+        <a href="#" class="view-all-link">View All Work <i class="fas fa-arrow-right ms-1"></i></a>
+      </div>
+      <div class="portfolio-masonry" id="portfolioGrid">
+        <div class="portfolio-item">
+          <a href="project-tracy-aaron.html" class="portfolio-img-link">
+            <img src="https://matchthemes.com/demohtml/tilia/images/portfolio/featured-images/gal-1-masonry.jpg" alt="Tracy & Aaron" loading="lazy" />
+          </a>
+          <div class="portfolio-caption"><h5><a href="project-tracy-aaron.html">Tracy &amp; Aaron</a></h5><span>Wedding</span></div>
+        </div>
+        <div class="portfolio-item">
+          <a href="project-jane-paul.html" class="portfolio-img-link">
+            <img src="https://matchthemes.com/demohtml/tilia/images/portfolio/featured-images/gal-2-masonry.jpg" alt="Jane & Paul" loading="lazy" />
+          </a>
+          <div class="portfolio-caption"><h5><a href="project-jane-paul.html">Jane &amp; Paul</a></h5><span>Lifestyle &nbsp; Wedding</span></div>
+        </div>
+        <div class="portfolio-item">
+          <a href="project-angela-zach.html" class="portfolio-img-link">
+            <img src="https://matchthemes.com/demohtml/tilia/images/portfolio/featured-images/gal-3-masonry.jpg" alt="Angela & Zach" loading="lazy" />
+          </a>
+          <div class="portfolio-caption"><h5><a href="project-angela-zach.html">Angela &amp; Zach</a></h5><span>Wedding</span></div>
+        </div>
+        <div class="portfolio-item">
+          <a href="project-street-people.html" class="portfolio-img-link">
+            <img src="https://matchthemes.com/demohtml/tilia/images/portfolio/featured-images/gal-4-masonry.jpg" alt="Street People" loading="lazy" />
+          </a>
+          <div class="portfolio-caption"><h5><a href="project-street-people.html">Street People</a></h5><span>Portrait</span></div>
+        </div>
+        <div class="portfolio-item">
+          <a href="project-black-white.html" class="portfolio-img-link">
+            <img src="https://matchthemes.com/demohtml/tilia/images/portfolio/featured-images/gal-5-masonry.jpg" alt="Black & White" loading="lazy" />
+          </a>
+          <div class="portfolio-caption"><h5><a href="project-black-white.html">Black &amp; White</a></h5><span>Lifestyle</span></div>
+        </div>
+        <div class="portfolio-item">
+          <a href="project-ballet-dancers.html" class="portfolio-img-link">
+            <img src="https://matchthemes.com/demohtml/tilia/images/portfolio/featured-images/gal-6-masonry.jpg" alt="Ballet Dancers" loading="lazy" />
+          </a>
+          <div class="portfolio-caption"><h5><a href="project-ballet-dancers.html">Ballet Dancers</a></h5><span>Lifestyle</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="home-section-1-5" class="testimonials-section parallax"
+    style="background-image:url('https://matchthemes.com/demohtml/tilia/images/pages/img-about1.jpg')">
+    <div class="testimonials-overlay"></div>
+    <div class="container py-6">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h6 class="testi-label">Testimonials</h6>
+          <div class="swiper testimonials-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                <p class="testi-text">"Working with Tilia was an absolute dream. They captured our wedding with so much
+                  emotion and artistry. Every photo tells a story and we couldn't be happier with the results!"</p>
+                <div class="testi-author"><strong>Angela Ray</strong><span>Wedding Client</span></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                <p class="testi-text">"The portrait session exceeded all expectations. The team made us feel comfortable
+                  and the final images are absolutely stunning. These photos will be treasured for decades."</p>
+                <div class="testi-author"><strong>James &amp; Maria Collins</strong><span>Portrait Clients</span></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                <p class="testi-text">"Professional, creative, and an absolute pleasure to work with. Tilia captured the
+                  essence of our brand perfectly. The fashion shoot results were magazine-quality."</p>
+                <div class="testi-author"><strong>Sophie Laurent</strong><span>Fashion Client</span></div>
+              </div>
+            </div>
+            <div class="swiper-pagination testi-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section id="home-section-1-6" class="team-section py-5">
+    <div class="container py-5">
+      <div class="mb-5">
+        <p class="section-label">Our Team</p>
+        <div class="section-label-wave"></div>
+        <h2 class="section-title">The Creatives</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="team-card">
+            <div class="team-img-wrap">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=500&fit=crop&auto=format" alt="April Ryan" loading="lazy" />
+            </div>
+            <div class="team-info mt-3">
+              <h4 class="team-name">April Ryan</h4>
+              <span class="team-role">Photographer</span>
+              <div class="team-social">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="team-card">
+            <div class="team-img-wrap">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=500&fit=crop&auto=format" alt="Robin Smith" loading="lazy" />
+            </div>
+            <div class="team-info mt-3">
+              <h4 class="team-name">Robin Smith</h4>
+              <span class="team-role">Photographer</span>
+              <div class="team-social">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="team-card">
+            <div class="team-img-wrap">
+              <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&h=500&fit=crop&auto=format" alt="Olivia Nelson" loading="lazy" />
+            </div>
+            <div class="team-info mt-3">
+              <h4 class="team-name">Olivia Nelson</h4>
+              <span class="team-role">Videographer</span>
+              <div class="team-social">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="team-card">
+            <div class="team-img-wrap">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=500&fit=crop&auto=format" alt="Jeremy Welch" loading="lazy" />
+            </div>
+            <div class="team-info mt-3">
+              <h4 class="team-name">Jeremy Welch</h4>
+              <span class="team-role">Retoucher</span>
+              <div class="team-social">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANDS / PARTNERS SECTION -->
+  <section id="home-section-brands" class="brands-section py-5">
+    <div class="container py-4">
+      <div class="row g-4 justify-content-center align-items-center text-center">
+        <div class="col-6 col-md-3">
+          <div class="brand-logo"><span>Mistletoe</span><small>Custom Florals</small></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="brand-logo"><span>Esme Herring</span><small>Vegan Products</small></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="brand-logo"><span>Anni Sweet</span><small>Wedding Planner</small></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="brand-logo"><span>Jewelry Designs</span><small>Ethical</small></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="brand-logo"><span>Lotus Pond</span><small>Floral Works</small></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="brand-logo"><span>Rose Field</span><small>Wedding Agency</small></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="brand-logo"><span>Wedding Photographer</span><small></small></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="brand-logo"><span>Danielle Art</span><small>Handmade</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="home-section-1-7" class="cta-section parallax"
+    style="background-image:url('https://matchthemes.com/demohtml/tilia/images/pages/contact-page.jpg')">
+    <div class="cta-overlay"></div>
+    <div class="container py-6 text-center">
+      <h2 class="cta-heading">Looking for a photographer<br /><em>or videographer?</em></h2>
+      <a href="#contact" class="btn btn-cta mt-4">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM FEED -->
+  <section id="home-section-insta" class="insta-section">
+    <div class="insta-grid">
+      <a href="https://matchthemes.com/demohtml/tilia/images/insta/insta-1.jpg" class="insta-item gallery-item">
+        <img src="https://matchthemes.com/demohtml/tilia/images/insta/insta-1.jpg" alt="Instagram 1" loading="lazy"
+          onerror="this.src='https://placehold.co/320x320/d4c9be/888?text=IG'" />
+        <div class="insta-overlay"><span>Follow Us!</span></div>
+      </a>
+      <a href="https://matchthemes.com/demohtml/tilia/images/insta/insta-2.jpg" class="insta-item gallery-item">
+        <img src="https://matchthemes.com/demohtml/tilia/images/insta/insta-2.jpg" alt="Instagram 2" loading="lazy"
+          onerror="this.src='https://placehold.co/320x320/d4c9be/888?text=IG'" />
+        <div class="insta-overlay"><span>Follow Us!</span></div>
+      </a>
+      <a href="https://matchthemes.com/demohtml/tilia/images/insta/insta-3.jpg" class="insta-item gallery-item">
+        <img src="https://matchthemes.com/demohtml/tilia/images/insta/insta-3.jpg" alt="Instagram 3" loading="lazy"
+          onerror="this.src='https://placehold.co/320x320/d4c9be/888?text=IG'" />
+        <div class="insta-overlay"><span>Follow Us!</span></div>
+      </a>
+      <a href="https://matchthemes.com/demohtml/tilia/images/insta/insta-4.jpg" class="insta-item gallery-item">
+        <img src="https://matchthemes.com/demohtml/tilia/images/insta/insta-4.jpg" alt="Instagram 4" loading="lazy"
+          onerror="this.src='https://placehold.co/320x320/d4c9be/888?text=IG'" />
+        <div class="insta-overlay"><span>Follow Us!</span></div>
+      </a>
+      <a href="https://matchthemes.com/demohtml/tilia/images/insta/insta-5.jpg" class="insta-item gallery-item">
+        <img src="https://matchthemes.com/demohtml/tilia/images/insta/insta-5.jpg" alt="Instagram 5" loading="lazy"
+          onerror="this.src='https://placehold.co/320x320/d4c9be/888?text=IG'" />
+        <div class="insta-overlay"><span>Follow Us!</span></div>
+      </a>
+      <a href="https://matchthemes.com/demohtml/tilia/images/insta/insta-6.jpg" class="insta-item gallery-item">
+        <img src="https://matchthemes.com/demohtml/tilia/images/insta/insta-6.jpg" alt="Instagram 6" loading="lazy"
+          onerror="this.src='https://placehold.co/320x320/d4c9be/888?text=IG'" />
+        <div class="insta-overlay"><span>Follow Us!</span></div>
+      </a>
+      <a href="https://matchthemes.com/demohtml/tilia/images/insta/insta-7.jpg" class="insta-item gallery-item">
+        <img src="https://matchthemes.com/demohtml/tilia/images/insta/insta-7.jpg" alt="Instagram 7" loading="lazy"
+          onerror="this.src='https://placehold.co/320x320/d4c9be/888?text=IG'" />
+        <div class="insta-overlay"><span>Follow Us!</span></div>
+      </a>
+      <a href="https://matchthemes.com/demohtml/tilia/images/insta/insta-8.jpg" class="insta-item gallery-item">
+        <img src="https://matchthemes.com/demohtml/tilia/images/insta/insta-8.jpg" alt="Instagram 8" loading="lazy"
+          onerror="this.src='https://placehold.co/320x320/d4c9be/888?text=IG'" />
+        <div class="insta-overlay"><span>Follow Us!</span></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="site-footer">
+    <div class="footer-body">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h5 class="footer-widget-title">About Us</h5>
+              <div class="footer-divider"></div>
+              <p class="footer-text">Tilia is an award-winning wedding and portrait photography studio based in New
+                York. We create timeless images you'll treasure for a lifetime.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h5 class="footer-widget-title">Contact Us</h5>
+              <div class="footer-divider"></div>
+              <ul class="footer-contact list-unstyled">
+                <li><i class="fas fa-map-marker-alt"></i> 123 Studio Avenue, New York, NY 10001</li>
+                <li><i class="fas fa-phone"></i> +1 (212) 555-0190</li>
+                <li><i class="fas fa-envelope"></i> hello@tiliaphotography.com</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h5 class="footer-widget-title">Quick Links</h5>
+              <div class="footer-divider"></div>
+              <ul class="footer-links list-unstyled">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-widget">
+              <h5 class="footer-widget-title">Follow</h5>
+              <div class="footer-divider"></div>
+              <ul class="footer-social list-unstyled">
+                <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="#"><i class="fab fa-x-twitter"></i> Twitter / X</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="#"><i class="fab fa-pinterest-p"></i> Pinterest</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container text-center">
+        <p>&copy; 2026 Isuru. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.2/simple-lightbox.jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
